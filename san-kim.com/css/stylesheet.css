@@ -1,0 +1,226 @@
+
+html,body 
+{
+    margin:0;
+    padding:0;
+}
+
+a 
+{
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom:4px;
+}
+
+#header
+{
+    position:absolute;
+    width: 76vw;
+    height: calc(5vw + 40px);
+    margin-left:4vw;
+}
+
+#imageheader
+{
+    position:absolute;
+    margin-left: 80vw;
+    width:16vw;
+    height: calc(5vw + 40px);
+}
+
+#header .header
+{
+    vertical-align: middle;
+    line-height: calc(5vw + 40px);
+    font-weight: 200;
+    font-size: 17px;
+    margin-right:1.3vw;
+    line-height: calc(5vw+40px);
+}
+
+#header #SanKimheader
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    padding-right:2.1vw;
+    line-height: 40px;
+}
+
+#facebook_head
+{
+    position: absolute;
+    height:30px;
+    width:30px;
+    margin-top: calc(2.5vw + 5px);
+    margin-left: calc(16vw - 30px);
+}
+
+#instagram_head
+{
+    position: absolute;
+    height:17px;
+    width:17px;
+    margin-top: calc(2.5vw + 11.5px);
+    margin-left: calc(16vw - 65px);
+}
+
+
+#content 
+{
+    position:absolute;
+    margin-left:4vw;
+    width: 92vw;
+    margin-top: calc(5vw + 50px);
+    height: 100vh;
+}
+
+#faceimagediv
+{
+    margin-top: 5.7vw;
+    position:absolute;
+    overflow: hidden;
+}
+
+#faceimagediv img
+{
+    width: 64.4vw;
+}
+
+#aboutmediv
+{
+    position:absolute;
+    background-color:#DFE0E1;
+    width: 41.5vw;
+    height: 363px;
+    margin-top: 10.3vw;
+    margin-left: 50.5vw;
+}
+
+#abouttext
+{
+    width: calc(100% - 10vw);
+    height: calc(100% - 10vw);
+    margin-left: 5vw;
+    margin-top: 5vw;
+}
+
+#aboutmep1
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+#aboutmep
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+#footer
+{
+    position:absolute;
+    margin-top:calc(100vh + 17.5vw);
+    margin-bottom: 40px;
+    width: 76vw;
+    height: calc(5vw + 40px);
+    margin-left:4vw;
+    line-height: calc(5vw + 40px);
+}
+
+#SanKimfooter
+{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 27px;
+}
+
+#imagefooter
+{
+    position:absolute;
+    margin-top:calc(100vh + 17.5vw);
+    margin-bottom: 40px;
+    margin-left: 80vw;
+    width:16vw;
+    height: calc(5vw + 40px);
+}
+
+.progress-wrap {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: 50px;
+  box-shadow: inset  0 0 0 2px rgba(255,255,255,0.2);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.progress-wrap.active-progress {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.progress-wrap::after {
+  position: absolute;
+  content: '↑';
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  color: black;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 1;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.progress-wrap:hover::after {
+  opacity: 0;
+}
+.progress-wrap::before {
+  position: absolute;
+  content: '↑';
+  text-align: center;
+  line-height: 46px;
+  font-size: 24px;
+  opacity: 0;
+  background-image: linear-gradient(298deg, #da2c4d, #f8ab37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  left: 0;
+  top: 0;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+.progress-wrap:hover::before {
+  opacity: 1;
+}
+.progress-wrap svg path { 
+  fill: none; 
+}
+.progress-wrap svg.progress-circle path {
+  stroke: #ecedf3;
+  stroke-width: 4;
+  box-sizing:border-box;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
