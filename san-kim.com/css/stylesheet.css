@@ -36,7 +36,6 @@ a
     font-weight: 200;
     font-size: 17px;
     margin-right:1.3vw;
-    line-height: calc(5vw+40px);
 }
 
 #header #SanKimheader
@@ -72,7 +71,7 @@ a
     position:absolute;
     margin-left:4vw;
     width: 92vw;
-    margin-top: calc(5vw + 50px);
+    margin-top: calc(5vw + 60px);
     height: 100vh;
 }
 
@@ -96,6 +95,42 @@ a
     height: 363px;
     margin-top: 10.3vw;
     margin-left: 50.5vw;
+}
+
+@media (max-width: 900px) 
+{
+    #faceimagediv img
+    {
+        width: 80vw;
+    }
+    #aboutmediv
+    {
+        position:absolute;
+        background-color:#DFE0E1;
+        width: 60vw;
+        height: 363px;
+        margin-top: 50.3vw;
+        margin-left: 30.5vw;
+    }
+}
+@media (max-width: 609px) 
+{
+    #faceimagediv img
+    {
+        width: 92vw;
+    }
+    #aboutmediv
+    {
+        position:absolute;
+        background-color:#DFE0E1;
+        width: 80vw;
+        height: 360px;
+        margin-top: 65vw;
+        margin-left: 6vw;
+    }
+    #content{
+        margin-top: calc(5vw + 100px);
+    }
 }
 
 #abouttext
@@ -148,6 +183,118 @@ a
     width:16vw;
     height: calc(5vw + 40px);
 }
+
+button:focus {
+  outline: none;
+}
+
+
+
+/* Dropdown Button */
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  padding: 0px;
+  border: none;
+    
+    display: block;
+    cursor: pointer; 
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  margin-left: calc(8.1vw + 130px);
+  margin-top: calc(2.5vw + 2px);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 2px 10px 0px rgba(255,255,255,0.7);
+  z-index: 100;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  display: block;
+}
+
+ .dropdown:hover .dropdown-content {display: block;} 
+
+.dropcheck {
+    position: absolute;
+    left: -9999px;
+}
+
+.dropcheck:checked ~ .dropdown-content {
+  display: block;
+}
+
+
+
+#dropdownmenu
+{
+    display:none;
+}
+
+/* if small media width */
+@media (max-width: 810px) {
+  .subpage { display: none; }
+  #SanKimheader{ 
+      vertical-align: middle;
+      line-height: calc(5vw + 40px) !important;
+    }
+  #dropdownmenu { display: inline-block; }
+}
+
+/* if small media width */
+@media (max-width: 280px) {
+    #imageheader {
+        display: none;
+    }
+    #SanKimheader{
+        font-size: 25px !important;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    #header {
+        height : 120px !important;
+        line-height: 120px;
+    }
+    #facebook_head{
+        margin-top: 45px;
+    }
+    #instagram_head{
+        margin-top: 51px;
+    }
+    .dropdown {
+        margin-top: 43px;
+    }
+    #mygallery{
+        margin-top: 120px;
+    }
+
+}
+
+/* if small media width */
+@media (max-width: 190px) {
+    .dropdown {
+      margin-left: calc(100vw - 50px);
+      margin-top: calc(2.5vw + 2px);
+    }
+}
+
 
 .progress-wrap {
   position: fixed;
